@@ -1,9 +1,26 @@
-.booklist-container{
-  font-size:16px;
-  color:rgb(87, 39, 8);
+.booklist-container {
+  font-size: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.425);
+  width: 450px;
+  height: 450px;
+  overflow: scroll;
 }
 
-.booklist-title{
-  font-size:20px;
+.booklist-title {
+  font-size: 25px;
+  padding: 20px;
+  letter-spacing: 0.9px;
+  line-height: 20px;
+  color: rgb(250, 192, 202);
 }
 
+.book-names {
+  padding: 20px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.book-names:hover {
+  color: aquamarine;
+}

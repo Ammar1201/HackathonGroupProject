@@ -20,7 +20,7 @@ function BookList({ data, category, id }) {
             .filter((book) => book.category === category)
             .map((book) => {
               console.log('hello');
-              return <li onClick={() => handleClick(book._id)}>{book.name}</li>;
+              return <li className="book-names" onClick={() => handleClick(book._id)}>{book.name}</li>;
             })}
         </ul>
       </div>

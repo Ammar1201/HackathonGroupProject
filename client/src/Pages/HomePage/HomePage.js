@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import BookList from "../../Components/BookList/BookList"
 import { useNavigate } from "react-router-dom";
-import logo from "../../Images/Book-icon-bible.png"
+import logo from "../../Images/logo.png"
 import "./HomePage.css";
 
 function HomePage(data) {

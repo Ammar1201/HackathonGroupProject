@@ -6,14 +6,14 @@ import { Link } from "react-router-dom";
 function NavBar() {
   return ( 
   <nav className="nav-main">
-    <h3>Logo</h3>
+    <h3 style={{color: 'white'}}>TRANSBOOKS</h3>
     <ul className="list">
       <li>
         <Link to="/">Home</Link>
       </li>
-      <li>
+      {/* <li>
         <Link to="/BookDisplay">Book</Link>
-      </li>
+      </li> */}
       <li>
         <Link to="/About">About</Link>
       </li>

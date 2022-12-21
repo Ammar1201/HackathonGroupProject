@@ -1,13 +1,15 @@
 .main-homepage {
   background-color: rgb(243, 204, 210);
-  height: 100vh;
+  height: calc(100vh - 50px);
   color: white;
   display: flex;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 30px;
   /* justify-content: center; */
   flex-direction: column;
-  background-image: url("../../Images/books-g703a2be2c_1920.jpg");
+  background-image: url("../../Images/8.jpg");
+  background-position:top;
+
 }
 
 .title-hp {
@@ -36,11 +38,15 @@ select {
   flex-direction: column;
   align-items: center;
 }
+select:hover{
+  background-color: rgb(93, 178, 248);
+}
 
 label {
   font-size: 20px;
   padding: 5px;
-  color:rgb(138, 32, 6);
+  color:rgb(243, 84, 217);
+  text-shadow: 2px 2px 2px rgba(255, 255, 255,0.22);
 }
 
 .homepage-logo {
