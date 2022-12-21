@@ -1,2 +1,1 @@
-# HMO-ManagmentSystem
 # HackathonGroupProject
