@@ -4,13 +4,12 @@ const bookSchema = new mongoose.Schema({
     name: {
         type: String
     },
-    text:{
+    text: {
         type: String
     },
-    image:{
+    image: {
         type: String
     }
 });
 
 export const Book = mongoose.model("Book", bookSchema);
-    
