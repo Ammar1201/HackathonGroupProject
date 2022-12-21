@@ -1,11 +1,11 @@
 .book-text {
   color: black;
-  height: 100vh;
+  height: calc(100vh - 50px);
   background-image: url("../../Images/books-g703a2be2c_1920.jpg");
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 40px;
   /* justify-content: center; */
 }
 .book-img {
@@ -16,15 +16,16 @@
   background-position: center;
   background-size: cover;
 }
-.book-title{
-  padding:20px;
+.book-title {
+  padding: 20px;
   font-size: 26px;
   color: black;
   text-shadow: 4px 3px 0px gainsboro;
 }
-.book-paragraph{
+.book-paragraph {
   background-color: rgba(0, 0, 0, 0.425);
   width: 450px;
-  height: 850px;
+  height: 450px;
   overflow: scroll;
+  padding: 15px;
 }
