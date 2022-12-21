@@ -1,28 +1,23 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import useFetch from "./hooks/useFetch";
-import HomePage from "./Pages/HomePage/HomePage.jsx";
-import NavBar from "./Components/NavBar/NavBar.jsx";
-import BookDisplay from "./Pages/BookDisplay/BookDisplay.jsx";
-import Error from "./Pages/Error/Error.jsx";
+import HomePage from "./Pages/HomePage/HomePage";
+import NavBar from "./Components/NavBar/NavBar";
+import BookDisplay from "./Pages/BookDIsplay/BookDisplay";
+import Error from "./Pages/Error/Error";
 
 const App = () => {
   const [data, error] = useFetch("");
 
   return (
-    <h1>
+    <div>
       <NavBar />
       <Routes>
-        <Route data={data} exact path="/" element={<HomePage />} />
-        <Route
-          data={data}
-          exact
-          path="/BookDisplay"
-          element={<BookDisplay />}
-        />
-        <Route exact path="*" element={<Error />} />
+        <Route path="/" element={<HomePage  data={data} />} />
+        <Route path="/BookDisplay/:id" element={<BookDisplay />} />
+        <Route path="*" element={<Error />} />
       </Routes>
-    </h1>
+    </div>
   );
 };
 

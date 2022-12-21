@@ -1,11 +1,13 @@
-import axios from 'axios';
+import axios from "axios";
 
-let myUrl = 'http://localhost:5000/api';
+let myUrl = "http://localhost:5000/api";
 
-if (process.env.NODE_ENV === 'production') {
-  myUrl = 'api';
+if (process.env.NODE_ENV === "production") {
+  myUrl = "api";
 }
 
 const Api = axios.create({
   baseURL: myUrl,
 });
+
+export default Api;

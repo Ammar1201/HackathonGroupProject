@@ -1,0 +1,56 @@
+.main-homepage {
+  background-color: rgb(243, 204, 210);
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  /* justify-content: center; */
+  flex-direction: column;
+  background-image: url("../../Images/books-g703a2be2c_1920.jpg");
+}
+
+.title-hp {
+  color: white;
+}
+button {
+  color: black;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+select {
+  width: 150px;
+  color: black;
+  height: 50px;
+  border-radius: 15px;
+  padding: 8px;
+}
+
+.drop-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 20px;
+  padding: 5px;
+  color:rgb(138, 32, 6);
+}
+
+.homepage-logo {
+  width: 250px;
+}
+
+.title {
+  font-size: clamp(1.5625rem, -1.1719rem + 8.75vw, 3.75rem);
+  text-align: center;
+  color: #FFFFFF;
+text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+  
+}
