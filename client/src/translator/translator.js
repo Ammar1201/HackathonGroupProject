@@ -1,12 +1,10 @@
-import { useState } from "react";
-import "./Translator.css";
-import React from "react";
+import React, { useState } from "react";
 
 const Translator = (originalText, outputLang) => {
-  const [translatedText, setTranslatedText] = useState("");
+  const [translatedText, setTranslatedText] = useState();
   const [isTranslated, setIsTranslated] = useState();
 
-  const translate = () => {
+  const Translate = () => {
     const options = {
       method: "POST",
       headers: {
@@ -41,7 +39,7 @@ const Translator = (originalText, outputLang) => {
 
   return (
     <div className="translatedText">
-      {translate()}
+      {Translate()}
       {isTranslated ? translatedText : null}
     </div>
   );

@@ -1,12 +1,20 @@
 .about-container {
   height: calc(100vh - 50px);
-  background-image: url(../../Images/2.jpg);
+  background-image: url(../../Images/Capture.JPG);
   display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.text {
+.about-text {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding:20px;
+  padding-left:350px;
+  padding-top:130px;
+  /* width: 50%; */
+  background-color: rgba(0, 0, 0, 0.226);
+  font-size: 20px;
+  color:white;
 }

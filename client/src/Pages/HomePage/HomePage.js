@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import BookList from "../../Components/BookList/BookList"
+import BookList from "../../Components/BookList/BookList";
 import { useNavigate } from "react-router-dom";
-import logo from "../../Images/logo.png"
+import logo from "../../Images/logo.png";
+import translator from "../../translator/translator";
 import "./HomePage.css";
 
 function HomePage(data) {
   const [categoryInput, setCategoryInput] = useState("");
   const [category, setCategory] = useState(false);
   const [languageInput, setLanguageInput] = useState("");
-  const [books, setBooks]= useState([])
+  const [books, setBooks] = useState([]);
 
   const navigate = useNavigate();
 
@@ -23,9 +24,9 @@ function HomePage(data) {
     console.log(input);
     setLanguageInput(input);
   }
-  
+
   function displayCategoryBooks() {
-    setCategory(true)
+    setCategory(true);
     // navigate("/BookDisplay")
   }
 
@@ -47,7 +48,7 @@ function HomePage(data) {
 
   return (
     <div className="main-homepage">
-      <img className="homepage-logo"src={logo} alt="" />
+      <img className="homepage-logo" src={logo} alt="" />
       <h2 className="title">Translating dreams to reality</h2>
       <div className="buttons">
         <div className="drop-down">
@@ -73,9 +74,11 @@ function HomePage(data) {
           </select>
         </div>
       </div>
-      {
-        categoryInput && <div><BookList data={data} category={categoryInput}/></div>
-      }
+      {categoryInput && (
+        <div>
+          <BookList data={data} category={categoryInput} />
+        </div>
+      )}
     </div>
   );
 }
