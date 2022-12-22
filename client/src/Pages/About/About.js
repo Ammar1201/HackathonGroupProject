@@ -3,7 +3,7 @@ import "./About.css"
 
 function About() {
   return <div className="about-container">
-    <p className="text">
+    <p className="about-text">
       Hi!
       <br />
       We all know that reading is important for children's development.
